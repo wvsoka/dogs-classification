@@ -6,6 +6,20 @@ pip install -r requirements.txt
 ├───outputs
 └───src
 
-python src/train.py --model mobilenet_v2
-python src/train.py --model efficientnet_b0
-python src/train.py --model resnet18
+python src/train.py --model mobilenet_v2 --fold 0
+python src/train.py --model mobilenet_v2 --fold 1
+python src/train.py --model mobilenet_v2 --fold 2
+python src/train.py --model mobilenet_v2 --fold 3
+python src/train.py --model mobilenet_v2 --fold 4
+
+python src/train.py --model efficientnet_b0 --fold 0
+python src/train.py --model efficientnet_b0 --fold 1
+python src/train.py --model efficientnet_b0 --fold 2
+python src/train.py --model efficientnet_b0 --fold 3
+python src/train.py --model efficientnet_b0 --fold 4
+
+python src/train.py --model resnet18 --fold 0
+python src/train.py --model resnet18 --fold 1
+python src/train.py --model resnet18 --fold 2
+python src/train.py --model resnet18 --fold 3
+python src/train.py --model resnet18 --fold 4
