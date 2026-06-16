@@ -142,7 +142,7 @@ def get_fold_dataloaders(fold: int, n_splits: int = 5):
         batch_size=BATCH_SIZE,
         shuffle=True,
         num_workers=NUM_WORKERS,
-        pin_memory=True,
+        pin_memory=False,
     )
 
     val_loader = DataLoader(
@@ -150,7 +150,7 @@ def get_fold_dataloaders(fold: int, n_splits: int = 5):
         batch_size=BATCH_SIZE,
         shuffle=False,
         num_workers=NUM_WORKERS,
-        pin_memory=True,
+        pin_memory=False,
     )
 
     return train_loader, val_loader
@@ -167,7 +167,7 @@ def get_final_train_test_dataloaders():
         batch_size=BATCH_SIZE,
         shuffle=True,
         num_workers=NUM_WORKERS,
-        pin_memory=True,
+        pin_memory=False,
     )
 
     test_loader = DataLoader(
@@ -175,7 +175,7 @@ def get_final_train_test_dataloaders():
         batch_size=BATCH_SIZE,
         shuffle=False,
         num_workers=NUM_WORKERS,
-        pin_memory=True,
+        pin_memory=False,
     )
 
     return train_loader, test_loader

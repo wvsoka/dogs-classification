@@ -20,17 +20,17 @@ NUM_WORKERS = 4
 
 SEED = 42
 
-HEAD_EPOCHS = 10
+HEAD_EPOCHS = 5
 HEAD_LR = 1e-3
 
-FINETUNE_EPOCHS = 30
+FINETUNE_EPOCHS = 10
 FINETUNE_LR = 1e-4
 
 WEIGHT_DECAY = 1e-4
 PATIENCE = 7
 
 MODELS = [
-    "mobilenet_v3_large",
+    "mobilenet_v2",
     "efficientnet_b0",
-    "resnet50",
+    "resnet18",
 ]

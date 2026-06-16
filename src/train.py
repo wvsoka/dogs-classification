@@ -20,7 +20,7 @@ from config import (
     SEED,
 )
 from dataset import get_fold_dataloaders
-from models import build_model, unfreeze_all, count_parameters
+from models import build_model, unfreeze_last_block, count_parameters
 from utils import set_seed, get_device, ensure_dirs, EarlyStopping, Timer, save_json
 
 
@@ -221,7 +221,7 @@ def main():
             head_optimizer,
             mode="min",
             factor=0.1,
-            patience=3,
+            patience=2,
         )
 
         head_summary = train_phase(
@@ -244,14 +244,14 @@ def main():
         checkpoint = torch.load(head_checkpoint_path, map_location=device)
         model.load_state_dict(checkpoint["model_state_dict"])
 
-        # Faza 2: fine-tuning całego modelu
-        unfreeze_all(model)
+        # Faza 2: fine-tuning ostatniego bloku modelu
+        unfreeze_last_block(model, model_name)
 
-        print("Parametry po odmrożeniu:")
+        print("Parametry po odmrożeniu ostatniego bloku:")
         print(count_parameters(model))
 
         finetune_optimizer = AdamW(
-            model.parameters(),
+            filter(lambda p: p.requires_grad, model.parameters()),
             lr=FINETUNE_LR,
             weight_decay=WEIGHT_DECAY,
         )
@@ -260,7 +260,7 @@ def main():
             finetune_optimizer,
             mode="min",
             factor=0.1,
-            patience=3,
+            patience=2,
         )
 
         finetune_summary = train_phase(
