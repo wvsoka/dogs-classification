@@ -1,14 +1,22 @@
 from pathlib import Path
-from typing import Tuple, List
+from typing import Tuple, List, Optional
 
 import scipy.io
 from PIL import Image
 
-import torch
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset, DataLoader, Subset
 from torchvision import transforms
+from sklearn.model_selection import StratifiedKFold
 
-from config import IMAGES_DIR, TRAIN_LIST, TEST_LIST, IMAGE_SIZE, BATCH_SIZE, NUM_WORKERS
+from config import (
+    IMAGES_DIR,
+    TRAIN_LIST,
+    TEST_LIST,
+    IMAGE_SIZE,
+    BATCH_SIZE,
+    NUM_WORKERS,
+    SEED,
+)
 
 
 def _matlab_cell_to_str(x) -> str:
@@ -33,7 +41,7 @@ def load_stanford_list(mat_path: Path) -> Tuple[List[str], List[int]]:
 
     for i in range(len(labels)):
         rel_path = _matlab_cell_to_str(file_list[i])
-        label = int(labels[i]) - 1  # MATLAB labels: 1-120, PyTorch: 0-119
+        label = int(labels[i]) - 1
 
         paths.append(rel_path)
         y.append(label)
@@ -60,6 +68,9 @@ class StanfordDogsDataset(Dataset):
         label = self.labels[idx]
 
         img_path = IMAGES_DIR / rel_path
+
+        if not img_path.exists():
+            raise FileNotFoundError(f"Nie znaleziono obrazu: {img_path}")
 
         image = Image.open(img_path).convert("RGB")
 
@@ -88,7 +99,7 @@ def get_transforms():
         ),
     ])
 
-    test_transform = transforms.Compose([
+    eval_transform = transforms.Compose([
         transforms.Resize((256, 256)),
         transforms.CenterCrop(IMAGE_SIZE),
         transforms.ToTensor(),
@@ -98,14 +109,58 @@ def get_transforms():
         ),
     ])
 
-    return train_transform, test_transform
+    return train_transform, eval_transform
 
 
-def get_dataloaders():
-    train_transform, test_transform = get_transforms()
+def get_fold_dataloaders(fold: int, n_splits: int = 5):
+    train_transform, eval_transform = get_transforms()
+
+    base_dataset_for_labels = StanfordDogsDataset(split="train", transform=None)
+    labels = base_dataset_for_labels.labels
+
+    skf = StratifiedKFold(
+        n_splits=n_splits,
+        shuffle=True,
+        random_state=SEED,
+    )
+
+    folds = list(skf.split(range(len(labels)), labels))
+
+    if fold < 0 or fold >= n_splits:
+        raise ValueError(f"fold musi być od 0 do {n_splits - 1}")
+
+    train_idx, val_idx = folds[fold]
+
+    train_dataset_full = StanfordDogsDataset(split="train", transform=train_transform)
+    val_dataset_full = StanfordDogsDataset(split="train", transform=eval_transform)
+
+    train_subset = Subset(train_dataset_full, train_idx)
+    val_subset = Subset(val_dataset_full, val_idx)
+
+    train_loader = DataLoader(
+        train_subset,
+        batch_size=BATCH_SIZE,
+        shuffle=True,
+        num_workers=NUM_WORKERS,
+        pin_memory=True,
+    )
+
+    val_loader = DataLoader(
+        val_subset,
+        batch_size=BATCH_SIZE,
+        shuffle=False,
+        num_workers=NUM_WORKERS,
+        pin_memory=True,
+    )
+
+    return train_loader, val_loader
+
+
+def get_final_train_test_dataloaders():
+    train_transform, eval_transform = get_transforms()
 
     train_dataset = StanfordDogsDataset(split="train", transform=train_transform)
-    test_dataset = StanfordDogsDataset(split="test", transform=test_transform)
+    test_dataset = StanfordDogsDataset(split="test", transform=eval_transform)
 
     train_loader = DataLoader(
         train_dataset,
@@ -123,4 +178,4 @@ def get_dataloaders():
         pin_memory=True,
     )
 
-    return train_loader, test_loader, train_dataset, test_dataset
+    return train_loader, test_loader
