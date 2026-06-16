@@ -4,6 +4,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 DATA_DIR = PROJECT_ROOT / "data" / "StanfordDogs"
 IMAGES_DIR = DATA_DIR / "Images"
+TRAIN_LIST = DATA_DIR / "lists" / "train_list.mat"
+TEST_LIST = DATA_DIR / "lists" / "test_list.mat"
 
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
 CHECKPOINT_DIR = OUTPUT_DIR / "checkpoints"
@@ -18,9 +20,11 @@ NUM_WORKERS = 4
 
 SEED = 42
 
+# Etap 1: frozen backbone
 HEAD_EPOCHS = 10
 HEAD_LR = 1e-3
 
+# Etap 2: fine-tuning
 FINETUNE_EPOCHS = 30
 FINETUNE_LR = 1e-4
 

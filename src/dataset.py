@@ -12,10 +12,6 @@ from config import IMAGES_DIR, TRAIN_LIST, TEST_LIST, IMAGE_SIZE, BATCH_SIZE, NU
 
 
 def _matlab_cell_to_str(x) -> str:
-    """
-    Stanford Dogs .mat bywa zapisany jako tablica obiektów.
-    Ta funkcja bezpiecznie wyciąga string ścieżki.
-    """
     while isinstance(x, (list, tuple)) or hasattr(x, "shape"):
         try:
             x = x[0]
