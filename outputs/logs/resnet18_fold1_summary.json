@@ -1,0 +1,20 @@
+{
+    "model": "resnet18",
+    "fold": 1,
+    "head": {
+        "phase": "head",
+        "best_val_loss": 0.9425582750638326,
+        "best_epoch": 5
+    },
+    "finetune": {
+        "phase": "finetune",
+        "best_val_loss": 0.7913009818394979,
+        "best_epoch": 10
+    },
+    "training_time_seconds": 1810.3706676959991,
+    "device": "cpu",
+    "parameters": {
+        "total_params": 11238072,
+        "trainable_params": 8455288
+    }
+}
