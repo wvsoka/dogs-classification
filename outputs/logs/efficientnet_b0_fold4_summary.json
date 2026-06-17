@@ -1,0 +1,20 @@
+{
+    "model": "efficientnet_b0",
+    "fold": 4,
+    "head": {
+        "phase": "head",
+        "best_val_loss": 1.0777887900670369,
+        "best_epoch": 5
+    },
+    "finetune": {
+        "phase": "finetune",
+        "best_val_loss": 0.9053940268357595,
+        "best_epoch": 10
+    },
+    "training_time_seconds": 1633.7291240692139,
+    "device": "cpu",
+    "parameters": {
+        "total_params": 4161268,
+        "trainable_params": 565880
+    }
+}
