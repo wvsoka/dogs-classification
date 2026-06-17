@@ -1,0 +1,31 @@
+image_index,category,fold,checkpoint,true_label,true_name,pred_label,pred_name,correct
+3602,correct,0,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold0_best_finetune.pt,44,Boston bull,44,Boston bull,True
+3602,correct,1,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold1_best_finetune.pt,44,Boston bull,44,Boston bull,True
+3602,correct,2,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold2_best_finetune.pt,44,Boston bull,44,Boston bull,True
+3602,correct,3,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold3_best_finetune.pt,44,Boston bull,44,Boston bull,True
+3602,correct,4,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold4_best_finetune.pt,44,Boston bull,44,Boston bull,True
+3795,correct,0,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold0_best_finetune.pt,47,standard schnauzer,47,standard schnauzer,True
+3795,correct,1,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold1_best_finetune.pt,47,standard schnauzer,47,standard schnauzer,True
+3795,correct,2,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold2_best_finetune.pt,47,standard schnauzer,47,standard schnauzer,True
+3795,correct,3,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold3_best_finetune.pt,47,standard schnauzer,47,standard schnauzer,True
+3795,correct,4,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold4_best_finetune.pt,47,standard schnauzer,47,standard schnauzer,True
+339,correct,0,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold0_best_finetune.pt,4,Shih-Tzu,4,Shih-Tzu,True
+339,correct,1,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold1_best_finetune.pt,4,Shih-Tzu,4,Shih-Tzu,True
+339,correct,2,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold2_best_finetune.pt,4,Shih-Tzu,4,Shih-Tzu,True
+339,correct,3,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold3_best_finetune.pt,4,Shih-Tzu,4,Shih-Tzu,True
+339,correct,4,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold4_best_finetune.pt,4,Shih-Tzu,4,Shih-Tzu,True
+3132,wrong,0,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold0_best_finetune.pt,39,Sealyham terrier,47,standard schnauzer,False
+3132,wrong,1,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold1_best_finetune.pt,39,Sealyham terrier,47,standard schnauzer,False
+3132,wrong,2,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold2_best_finetune.pt,39,Sealyham terrier,47,standard schnauzer,False
+3132,wrong,3,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold3_best_finetune.pt,39,Sealyham terrier,47,standard schnauzer,False
+3132,wrong,4,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold4_best_finetune.pt,39,Sealyham terrier,47,standard schnauzer,False
+7997,wrong,0,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold0_best_finetune.pt,110,Brabancon griffon,72,schipperke,False
+7997,wrong,1,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold1_best_finetune.pt,110,Brabancon griffon,72,schipperke,False
+7997,wrong,2,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold2_best_finetune.pt,110,Brabancon griffon,72,schipperke,False
+7997,wrong,3,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold3_best_finetune.pt,110,Brabancon griffon,110,Brabancon griffon,True
+7997,wrong,4,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold4_best_finetune.pt,110,Brabancon griffon,72,schipperke,False
+5042,wrong,0,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold0_best_finetune.pt,67,Welsh springer spaniel,112,Cardigan,False
+5042,wrong,1,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold1_best_finetune.pt,67,Welsh springer spaniel,112,Cardigan,False
+5042,wrong,2,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold2_best_finetune.pt,67,Welsh springer spaniel,112,Cardigan,False
+5042,wrong,3,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold3_best_finetune.pt,67,Welsh springer spaniel,112,Cardigan,False
+5042,wrong,4,C:\Users\miste\PycharmProjects\glebokie-sieci\outputs\checkpoints\resnet18_fold4_best_finetune.pt,67,Welsh springer spaniel,112,Cardigan,False

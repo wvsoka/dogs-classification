@@ -1,0 +1,7 @@
+image_index,true_label,pred_fold0,correct_fold0,pred_fold1,correct_fold1,pred_fold2,correct_fold2,pred_fold3,correct_fold3,pred_fold4,correct_fold4,correct_count,category
+3602,44,44,True,44,True,44,True,44,True,44,True,5,correct
+3795,47,47,True,47,True,47,True,47,True,47,True,5,correct
+339,4,4,True,4,True,4,True,4,True,4,True,5,correct
+3132,39,47,False,47,False,47,False,47,False,47,False,0,wrong
+7997,110,72,False,72,False,72,False,110,True,72,False,1,wrong
+5042,67,112,False,112,False,112,False,112,False,112,False,0,wrong
