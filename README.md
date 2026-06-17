@@ -1,9 +1,21 @@
 pip install -r requirements.txt
 
 ├───data
-│   ├───Images
-│   └───Lists
+│   └───StanfordDogs
+│       ├───Images
+│       └───Lists
 ├───outputs
+│   ├───checkpoints
+│   ├───figures
+│   │   ├───confusion_matrices
+│   │   └───training_curves
+│   ├───logs
+│   └───metrics
+│       ├───statistical_tests
+│       └───test
+│           ├───confusion_matrices
+│           ├───predictions
+│           └───reports
 └───src
 
 python src/train.py --model mobilenet_v2 --fold 0
