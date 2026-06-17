@@ -1,0 +1,16 @@
+{
+    "model": "mobilenet_v2",
+    "fold": 3,
+    "checkpoint": "C:\\Users\\miste\\PycharmProjects\\glebokie-sieci\\outputs\\checkpoints\\mobilenet_v2_fold3_best_finetune.pt",
+    "accuracy": 0.6982517482517483,
+    "balanced_accuracy": 0.6916876207189019,
+    "precision_macro": 0.6924198210369946,
+    "recall_macro": 0.6916876207189019,
+    "f1_macro": 0.687043711717088,
+    "precision_weighted": 0.7109103437282132,
+    "recall_weighted": 0.6982517482517483,
+    "f1_weighted": 0.6998473400871766,
+    "top5_accuracy": 0.9321678321678322,
+    "roc_auc_macro": 0.9936423719393538,
+    "roc_auc_weighted": 0.9937745824615989
+}

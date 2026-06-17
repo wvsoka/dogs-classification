@@ -1,0 +1,16 @@
+{
+    "model": "efficientnet_b0",
+    "fold": 2,
+    "checkpoint": "C:\\Users\\miste\\PycharmProjects\\glebokie-sieci\\outputs\\checkpoints\\efficientnet_b0_fold2_best_finetune.pt",
+    "accuracy": 0.7284382284382285,
+    "balanced_accuracy": 0.7232670691474674,
+    "precision_macro": 0.7241236477975647,
+    "recall_macro": 0.7232670691474674,
+    "f1_macro": 0.7188785773737593,
+    "precision_weighted": 0.7405134024203291,
+    "recall_weighted": 0.7284382284382285,
+    "f1_weighted": 0.7296846485956501,
+    "top5_accuracy": 0.938927738927739,
+    "roc_auc_macro": 0.9946758581952474,
+    "roc_auc_weighted": 0.9948239016201395
+}

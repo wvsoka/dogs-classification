@@ -1,0 +1,16 @@
+{
+    "model": "resnet18",
+    "fold": 2,
+    "checkpoint": "C:\\Users\\miste\\PycharmProjects\\glebokie-sieci\\outputs\\checkpoints\\resnet18_fold2_best_finetune.pt",
+    "accuracy": 0.7638694638694639,
+    "balanced_accuracy": 0.7624571970515269,
+    "precision_macro": 0.7580695142417869,
+    "recall_macro": 0.7624571970515269,
+    "f1_macro": 0.7564249630559057,
+    "precision_weighted": 0.7720679482345542,
+    "recall_weighted": 0.7638694638694639,
+    "f1_weighted": 0.7643465429339797,
+    "top5_accuracy": 0.9587412587412587,
+    "roc_auc_macro": 0.9960700858520724,
+    "roc_auc_weighted": 0.9961695574289063
+}
