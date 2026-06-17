@@ -1,0 +1,4 @@
+comparison,p_value,rank,holm_alpha,significant
+mobilenet_v2 vs resnet18,7.774481742121794e-20,1,0.016666666666666666,True
+mobilenet_v2 vs efficientnet_b0,3.0616938038044574e-16,2,0.025,True
+efficientnet_b0 vs resnet18,1.6870590273053467e-10,3,0.05,True

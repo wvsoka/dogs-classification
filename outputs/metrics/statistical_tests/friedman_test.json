@@ -1,0 +1,12 @@
+{
+    "test":"Friedman test",
+    "statistic":133.35,
+    "p_value":1.105135218e-29,
+    "models":[
+        "mobilenet_v2",
+        "efficientnet_b0",
+        "resnet18"
+    ],
+    "n_classes":120,
+    "metric":"mean per-class F1 across 5 folds"
+}
