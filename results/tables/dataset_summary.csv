@@ -1,0 +1,2 @@
+number_of_classes,number_of_images_total,number_of_images_train,number_of_images_test,min_images_per_class,max_images_per_class,mean_images_per_class,std_images_per_class,imbalance_ratio_max_min,min_width,max_width,mean_width,min_height,max_height,mean_height,mean_aspect_ratio
+120,20580,12000,8580,148,252,171.5,23.2208975716619,1.7027027027027026,97,3264,442.5318756073858,100,2562,385.8612244897959,1.1871528255876256

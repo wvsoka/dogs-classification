@@ -1,0 +1,121 @@
+label_id_original,breed,class_dir,synset,test,train,total
+3,Maltese dog,n02085936-Maltese_dog,n02085936,152,100,252
+10,Afghan hound,n02088094-Afghan_hound,n02088094,139,100,239
+27,Scottish deerhound,n02092002-Scottish_deerhound,n02092002,132,100,232
+108,Pomeranian,n02112018-Pomeranian,n02112018,119,100,219
+89,Bernese mountain dog,n02107683-Bernese_mountain_dog,n02107683,118,100,218
+107,Samoyed,n02111889-Samoyed,n02111889,118,100,218
+20,Irish wolfhound,n02090721-Irish_wolfhound,n02090721,118,100,218
+5,Shih-Tzu,n02086240-Shih-Tzu,n02086240,114,100,214
+106,Great Pyrenees,n02111500-Great_Pyrenees,n02111500,113,100,213
+104,Leonberg,n02111129-Leonberg,n02111129,110,100,210
+102,basenji,n02110806-basenji,n02110806,109,100,209
+50,Tibetan terrier,n02097474-Tibetan_terrier,n02097474,106,100,206
+40,Sealyham terrier,n02095889-Sealyham_terrier,n02095889,102,100,202
+91,EntleBucher,n02108000-EntleBucher,n02108000,102,100,202
+41,Airedale,n02096051-Airedale,n02096051,102,100,202
+103,pug,n02110958-pug,n02110958,100,100,200
+26,Saluki,n02091831-Saluki,n02091831,100,100,200
+42,cairn,n02096177-cairn,n02096177,97,100,197
+39,Lakeland terrier,n02095570-Lakeland_terrier,n02095570,97,100,197
+43,Australian terrier,n02096294-Australian_terrier,n02096294,96,100,196
+7,papillon,n02086910-papillon,n02086910,96,100,196
+109,chow,n02112137-chow,n02112137,96,100,196
+24,Norwegian elkhound,n02091467-Norwegian_elkhound,n02091467,96,100,196
+12,beagle,n02088364-beagle,n02088364,95,100,195
+105,Newfoundland,n02111277-Newfoundland,n02111277,95,100,195
+100,Siberian husky,n02110185-Siberian_husky,n02110185,92,100,192
+23,Ibizan hound,n02091244-Ibizan_hound,n02091244,88,100,188
+6,Blenheim spaniel,n02086646-Blenheim_spaniel,n02086646,88,100,188
+22,whippet,n02091134-whippet,n02091134,87,100,187
+13,bloodhound,n02088466-bloodhound,n02088466,87,100,187
+54,Lhasa,n02098413-Lhasa,n02098413,86,100,186
+36,Norwich terrier,n02094258-Norwich_terrier,n02094258,85,100,185
+2,Japanese spaniel,n02085782-Japanese_spaniel,n02085782,85,100,185
+87,miniature pinscher,n02107312-miniature_pinscher,n02107312,84,100,184
+51,silky terrier,n02097658-silky_terrier,n02097658,83,100,183
+21,Italian greyhound,n02091032-Italian_greyhound,n02091032,82,100,182
+31,Bedlington terrier,n02093647-Bedlington_terrier,n02093647,82,100,182
+45,Boston bull,n02096585-Boston_bull,n02096585,82,100,182
+112,Pembroke,n02113023-Pembroke,n02113023,81,100,181
+44,Dandie Dinmont,n02096437-Dandie_Dinmont,n02096437,80,100,180
+33,Kerry blue terrier,n02093859-Kerry_blue_terrier,n02093859,79,100,179
+99,malamute,n02110063-malamute,n02110063,78,100,178
+11,basset,n02088238-basset,n02088238,75,100,175
+9,Rhodesian ridgeback,n02087394-Rhodesian_ridgeback,n02087394,72,100,172
+8,toy terrier,n02087046-toy_terrier,n02087046,72,100,172
+35,Norfolk terrier,n02094114-Norfolk_terrier,n02094114,72,100,172
+32,Border terrier,n02093754-Border_terrier,n02093754,72,100,172
+58,Labrador retriever,n02099712-Labrador_retriever,n02099712,71,100,171
+14,bluetick,n02088632-bluetick,n02088632,71,100,171
+97,Saint Bernard,n02109525-Saint_Bernard,n02109525,70,100,170
+79,Old English sheepdog,n02105641-Old_English_sheepdog,n02105641,69,100,169
+53,West Highland white terrier,n02098286-West_Highland_white_terrier,n02098286,69,100,169
+120,African hunting dog,n02116738-African_hunting_dog,n02116738,69,100,169
+34,Irish terrier,n02093991-Irish_terrier,n02093991,69,100,169
+88,Greater Swiss Mountain dog,n02107574-Greater_Swiss_Mountain_dog,n02107574,68,100,168
+59,Chesapeake Bay retriever,n02099849-Chesapeake_Bay_retriever,n02099849,67,100,167
+37,Yorkshire terrier,n02094433-Yorkshire_terrier,n02094433,64,100,164
+30,American Staffordshire terrier,n02093428-American_Staffordshire_terrier,n02093428,64,100,164
+62,English setter,n02100735-English_setter,n02100735,61,100,161
+28,Weimaraner,n02092339-Weimaraner,n02092339,60,100,160
+95,French bulldog,n02108915-French_bulldog,n02108915,59,100,159
+15,black-and-tan coonhound,n02089078-black-and-tan_coonhound,n02089078,59,100,159
+67,English springer,n02102040-English_springer,n02102040,59,100,159
+69,cocker spaniel,n02102318-cocker_spaniel,n02102318,59,100,159
+116,standard poodle,n02113799-standard_poodle,n02113799,59,100,159
+49,Scotch terrier,n02097298-Scotch_terrier,n02097298,58,100,158
+110,keeshond,n02112350-keeshond,n02112350,58,100,158
+38,wire-haired fox terrier,n02095314-wire-haired_fox_terrier,n02095314,57,100,157
+80,Shetland sheepdog,n02105855-Shetland_sheepdog,n02105855,57,100,157
+47,giant schnauzer,n02097130-giant_schnauzer,n02097130,57,100,157
+17,English foxhound,n02089973-English_foxhound,n02089973,57,100,157
+118,dingo,n02115641-dingo,n02115641,56,100,156
+93,bull mastiff,n02108422-bull_mastiff,n02108422,56,100,156
+52,soft-coated wheaten terrier,n02098105-soft-coated_wheaten_terrier,n02098105,56,100,156
+96,Great Dane,n02109047-Great_Dane,n02109047,56,100,156
+113,Cardigan,n02113186-Cardigan,n02113186,55,100,155
+117,Mexican hairless,n02113978-Mexican_hairless,n02113978,55,100,155
+29,Staffordshire bullterrier,n02093256-Staffordshire_bullterrier,n02093256,55,100,155
+48,standard schnauzer,n02097209-standard_schnauzer,n02097209,55,100,155
+63,Irish setter,n02100877-Irish_setter,n02100877,55,100,155
+115,miniature poodle,n02113712-miniature_poodle,n02113712,55,100,155
+61,vizsla,n02100583-vizsla,n02100583,54,100,154
+46,miniature schnauzer,n02097047-miniature_schnauzer,n02097047,54,100,154
+78,komondor,n02105505-komondor,n02105505,54,100,154
+73,schipperke,n02104365-schipperke,n02104365,54,100,154
+64,Gordon setter,n02101006-Gordon_setter,n02101006,53,100,153
+16,Walker hound,n02089867-Walker_hound,n02089867,53,100,153
+81,collie,n02106030-collie,n02106030,53,100,153
+77,kelpie,n02105412-kelpie,n02105412,53,100,153
+111,Brabancon griffon,n02112706-Brabancon_griffon,n02112706,53,100,153
+1,Chihuahua,n02085620-Chihuahua,n02085620,52,100,152
+60,German short-haired pointer,n02100236-German_short-haired_pointer,n02100236,52,100,152
+55,flat-coated retriever,n02099267-flat-coated_retriever,n02099267,52,100,152
+76,briard,n02105251-briard,n02105251,52,100,152
+94,Tibetan mastiff,n02108551-Tibetan_mastiff,n02108551,52,100,152
+65,Brittany spaniel,n02101388-Brittany_spaniel,n02101388,52,100,152
+85,German shepherd,n02106662-German_shepherd,n02106662,52,100,152
+84,Rottweiler,n02106550-Rottweiler,n02106550,52,100,152
+25,otterhound,n02091635-otterhound,n02091635,51,100,151
+114,toy poodle,n02113624-toy_poodle,n02113624,51,100,151
+56,curly-coated retriever,n02099429-curly-coated_retriever,n02099429,51,100,151
+19,borzoi,n02090622-borzoi,n02090622,51,100,151
+70,Sussex spaniel,n02102480-Sussex_spaniel,n02102480,51,100,151
+90,Appenzeller,n02107908-Appenzeller,n02107908,51,100,151
+92,boxer,n02108089-boxer,n02108089,51,100,151
+66,clumber,n02101556-clumber,n02101556,50,100,150
+68,Welsh springer spaniel,n02102177-Welsh_springer_spaniel,n02102177,50,100,150
+119,dhole,n02115913-dhole,n02115913,50,100,150
+86,Doberman,n02107142-Doberman,n02107142,50,100,150
+82,Border collie,n02106166-Border_collie,n02106166,50,100,150
+75,malinois,n02105162-malinois,n02105162,50,100,150
+74,groenendael,n02105056-groenendael,n02105056,50,100,150
+98,Eskimo dog,n02109961-Eskimo_dog,n02109961,50,100,150
+72,kuvasz,n02104029-kuvasz,n02104029,50,100,150
+57,golden retriever,n02099601-golden_retriever,n02099601,50,100,150
+71,Irish water spaniel,n02102973-Irish_water_spaniel,n02102973,50,100,150
+101,affenpinscher,n02110627-affenpinscher,n02110627,50,100,150
+83,Bouvier des Flandres,n02106382-Bouvier_des_Flandres,n02106382,50,100,150
+4,Pekinese,n02086079-Pekinese,n02086079,49,100,149
+18,redbone,n02090379-redbone,n02090379,48,100,148
